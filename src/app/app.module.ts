@@ -9,11 +9,14 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HomeComponent } from './home/home.component';
 
+import { UserAuthComponent } from './user-auth/user-auth.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     ProductDetailComponent,
-    HomeComponent
+    HomeComponent,
+    UserAuthComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
