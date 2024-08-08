@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  isLoginMode: boolean = true;
 
+  setLoginMode(isLogin: boolean) {
+    this.isLoginMode = isLogin;
+  }
 }
+

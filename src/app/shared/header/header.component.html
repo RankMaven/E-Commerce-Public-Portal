@@ -1,35 +1,38 @@
-
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-  <div class="container">
+    <div class="container">
       <a class="navbar-brand" href="#">ACCWOM</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Shop</a></li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a></li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-              </li>
-          </ul>
-          <div class="d-flex align-items-center">
-              <a class="icon-link" href="#"><i class="fas fa-search"></i></a>
-              <a class="icon-link" href="#"><i class="fas fa-user"></i></a>
-              <a class="icon-link" href="#"><i class="fas fa-heart"></i><span class="badge">5</span></a>
-              <a class="icon-link" href="#"><i class="fas fa-shopping-cart"></i><span class="badge">4</span></a>
-          </div>
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a class="icon-link" href="#"><i class="fas fa-search"></i></a>
+          <a class="icon-link" href="#"><i class="fas fa-user"></i></a>
+          <a class="icon-link" href="#"><i class="fas fa-heart"></i><span class="badge">5</span></a>
+          <a class="icon-link" href="#"><i class="fas fa-shopping-cart"></i><span class="badge">4</span></a>
+          <!-- Login & Signup Buttons -->
+          <button class="btn btn-outline-primary ms-3" data-bs-toggle="modal" data-bs-target="#authModal" (click)="setLoginMode(true)">Login</button>
+          <button class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#authModal" (click)="setLoginMode(false)">Sign Up</button>
+        </div>
       </div>
-  </div>
-</nav>
+</div>
+    
+<app-user-auth [isLogin]="isLoginMode"></app-user-auth>

@@ -15,8 +15,7 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
   declarations: [
     AppComponent,
     ProductDetailComponent,
-    HomeComponent,
-    UserAuthComponent
+    HomeComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
